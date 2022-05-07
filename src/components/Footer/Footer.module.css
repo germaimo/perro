@@ -1,0 +1,8 @@
+.text_footer{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 2em;
+    color: grey;
+    right: 0;
+}
