@@ -6,8 +6,11 @@
 }
 
 .content_hero{
-    width: 1240px;
+    width: 100%;
     height: 525px;
     border-radius: 15px;
-    overflow: hidden;
+    background-image: url('../../assets/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+
 }

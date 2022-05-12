@@ -7,4 +7,21 @@
 
 .menu li{
     margin-right: 2em;
+    cursor: pointer;
+    border: 2px dashed transparent;
+    padding: .5em;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.menu li:hover{
+    padding: .5em;
+    border: 2px dashed white;
+    border-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }

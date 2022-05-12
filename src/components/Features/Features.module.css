@@ -1,0 +1,32 @@
+.content_features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    margin-top: 1em;
+}
+
+.content_features div{
+    border: 2px dashed transparent;
+    height: 25vh;
+    background-color: #89b5dc30;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.content_features div:hover{
+    border: 2px dashed white;
+    
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+.content_features div p{
+    padding: .5em;
+}
