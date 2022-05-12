@@ -12,5 +12,13 @@
     background-image: url('../../assets/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg');
     background-repeat: no-repeat;
     cursor: pointer;
+    background-position: 1px 0px;
+    animation-name: mov;
+    animation-duration: 420s;
+}
 
+
+@keyframes mov {
+    from {background-position: 1px 0px;}
+    to {background-position: 1px -2000px;}
 }

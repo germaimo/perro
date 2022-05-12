@@ -4,7 +4,7 @@ import Features from '../Features/Features'
 
 const Content = () => {
   return ( <>
-          <div className={styles['content_hero']}></div>
+          <div loading="lazy" className={styles['content_hero']}></div>
           <Features />
         </>
   )
