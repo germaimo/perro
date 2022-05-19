@@ -1,8 +1,30 @@
+.more{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3rem;
+    margin: 1em 4em 1em;
+    text-align: center;
+}
+
+h5{
+    font-weight: bolder;
+}
+
+.more p{
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+img{
+    display: flex;
+    margin: 0 auto;
+    filter: hue-rotate(215deg);
+}
+
 .text_footer{
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
     padding: 2em;
     color: grey;
-    right: 62px;
+    text-align: end;
 }

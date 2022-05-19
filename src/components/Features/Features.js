@@ -1,9 +1,18 @@
 import React from 'react'
 import styles from './Features.module.css'
 
-const Features = () => {
+const Features = ({ clasx, items }) => {
+  console.log(clasx);
+
   return (
-    <div className={styles['content_features']}> <div> <p> item 1 </p> </div> <div> <p> item 2 </p></div> <div><p> item 3 </p> </div> </div>
+    <div className={`${styles['content_features']} ${styles[clasx]}`}>
+      {items.map((item) => {
+        return (
+          <div> <p> {item} </p> </div>
+        )
+      })}
+
+    </div>
   )
 }
 
