@@ -8,16 +8,12 @@ const Content = () => {
             <p>Choose your trip</p>
           </div>
           <br/>
-          <h2>Healthy</h2>
-          <Features items={[`🍋`, `🍎`, `🥑`]} clasx={'items-3'} />
-          <br/>
-          <br/>
-          <h3>Hey Ho, lets go</h3>
-          <Features items={[`🍺`, `🍷`, `🍸`]} clasx={'items-3'}/>
-          <br/>
-          <br/>
-          <h4>Down the rabbit hole</h4>
-          <Features items={[`🍄`, `🍬`]} clasx={'items-2'}/>
+          
+          <Features textTitle={'Healthy'} items={[`🍋`, `🍎`, `🥑`]} clasx={'items-3'} />
+          
+          <Features textTitle={'Hey Ho, lets go'} items={[`🍺`, `🍷`, `🍸`]} clasx={'items-3'}/>
+          
+          <Features textTitle={'Down the rabbit hole'} items={[`🍄`, `🍬`]} clasx={'items-2'}/>
         </>
   )
   
