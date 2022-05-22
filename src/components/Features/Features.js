@@ -5,7 +5,7 @@ const Features = ({ textTitle,clasx, items }) => {
   console.log(clasx);
 
   return ( <>
-  <h2>{textTitle}</h2>
+  <h2 className={styles['features_h2']} >{textTitle}</h2>
       <div className={`${styles['content_features']} ${styles[clasx]}`}>
         
         {items.map((item) => {

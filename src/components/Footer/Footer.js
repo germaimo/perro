@@ -5,7 +5,7 @@ import contact from '../../assets/reach-out.svg'
 
 const Footer = () => {
   return ( <div>
-      <img src={contact} styles={'width: 30%'} alt='person resting using phone' />
+      <img src={contact} className={styles['img_reachOut']} alt='person resting using phone' />
         
         <div className={styles['more']}>  
           <h5>Reach out</h5>
@@ -13,7 +13,7 @@ const Footer = () => {
           <div><button>More info</button></div>
         </div>
       
-      <img src={dancing} styles={'width: 70%'} alt='people dancing' />
+      <img src={dancing} className={styles['img_dancing']} alt='people dancing' />
       <div className={styles['text_footer']}> a product by perro industries © 2022 All rigths reserved</div>
   </div> )
 }

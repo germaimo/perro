@@ -7,7 +7,7 @@
 
 .content_hero{
     width: 100%;
-    height: 55vh;
+    min-height: 80vh;
     border-radius: 15px;
     background-image: url('../../assets/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg');
     background-repeat: no-repeat;
@@ -24,6 +24,10 @@
     margin-top: auto;
     margin-bottom: 0.5em;
     margin-left: 0.5em;
+}
+
+.features{
+    margin: 2em;
 }
 
 @keyframes mov {

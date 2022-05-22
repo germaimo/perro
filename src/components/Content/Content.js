@@ -9,11 +9,13 @@ const Content = () => {
           </div>
           <br/>
           
-          <Features textTitle={'Healthy'} items={[`🍋`, `🍎`, `🥑`]} clasx={'items-3'} />
-          
-          <Features textTitle={'Hey Ho, lets go'} items={[`🍺`, `🍷`, `🍸`]} clasx={'items-3'}/>
-          
-          <Features textTitle={'Down the rabbit hole'} items={[`🍄`, `🍬`]} clasx={'items-2'}/>
+          <div className={styles['features']}>
+            <Features textTitle={'Healthy'} items={[`🍋`, `🍎`, `🥑`]} clasx={'items-3'} />
+            
+            {/* <Features textTitle={'Hey Ho, lets go'} items={[`🍺`, `🍷`, `🍸`]} clasx={'items-3'}/> */}
+            
+            <Features textTitle={'Down the rabbit hole'} items={[`🍄`, `🍬`]} clasx={'items-2'}/>
+          </div>
         </>
   )
   
