@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import Content from '../Content/Content';
 import styles from './App.module.css';
 import Menu from "../Menu/Menu";
+import Form from '../Form/Form';
 //TODO HIGHLIGHT, FORM, cambiar illustraciones, popup
 //TODO CAMBIAR nombre de clases
 
@@ -14,7 +15,9 @@ const App = () =>{
     </div>
 
     <Content/>
+    <Form/>
     <Footer/> 
+
   </div>  
 }
 

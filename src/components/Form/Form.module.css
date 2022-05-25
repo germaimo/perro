@@ -1,0 +1,23 @@
+input[type=text], input[type=email]{
+    border:1px solid white;
+    padding: 2em;
+    background-color: #89b5dc30;
+}
+
+
+form{
+    display: flex;
+}
+
+.columna-1{
+    display: block;
+}
+
+.columna-2{
+    display: block;
+}
+
+.columna-1, .columna-2, .name, .email, .asunto, .message{
+    display: inline-block;
+    width: fit-content;
+}
