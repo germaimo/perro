@@ -1,12 +1,20 @@
 input[type=text], input[type=email]{
     border:1px solid white;
-    padding: 2em;
+    /* padding: 2em; */
     background-color: #89b5dc30;
+    color: white;
+    height: 20vh;
 }
 
+textarea{
+    height: 20vh;
+}
 
 form{
     display: flex;
+    height: 40vh;
+    border:1px solid white;
+    width: fit-content;
 }
 
 .columna-1{
