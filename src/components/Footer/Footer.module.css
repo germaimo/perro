@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+.footer{
+    margin-top: 2em;
+    position: relative;
+}
+
 h5{
     font-weight: bolder;
 }

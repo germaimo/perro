@@ -1,21 +1,30 @@
-import React from 'react'
-import styles from './Features.module.css'
+import React, { useState } from 'react';
+import styles from './Features.module.css';
 
-const Features = ({ textTitle,clasx, items }) => {
-  console.log(clasx);
+const Features = ({ textTitle, clasx, items }) => {
 
-  return ( <>
-  <h2 className={styles['features_h2']} >{textTitle}</h2>
-      <div className={`${styles['content_features']} ${styles[clasx]}`}>
-        
-        {items.map((item) => {
-          return (
-            <div> <p> {item} </p> </div>
-          )
-        })}
+  const [highlight, setHighlight] = useState('');
 
-      </div>
-    </>
+  const handleHighlight = (id) => {
+  
+    setHighlight(id);
+  };
+
+  return (<>
+    <h2 className={styles['features_h2']} >{textTitle}</h2>
+    <div className={`${styles['content_features']} ${styles[clasx]}`}>
+
+      {items.map((item, index) => {
+        return (
+          <div key={index} onClick={ ()=>{handleHighlight(item.id)} } className={ highlight === item.id ? styles['css-selector'] : ''} >
+            <p> {item.emoji} </p>
+          </div>
+
+        )
+      })}
+
+    </div>
+  </>
   )
 }
 

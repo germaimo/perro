@@ -1,9 +1,9 @@
 input[type=text], input[type=email]{
     background-color: #89b5dc30;
     color: white;
-    height: 20vh;
-    border: none;
-    border-radius: 5px;
+    height: 30vh;
+    border: 3px dashed transparent;
+    border-radius: 3px;
     width: 100%;
     padding: 0;
 }
@@ -20,14 +20,33 @@ input[type=text], input[type=email]{
 
 textarea{
     width: 100%;
-    height: 20vh;
+    height: 40vh;
+    font-family: roboto,sans-serif;
+    color: white;
+    border: 3px dashed transparent;
+    border-radius: 3px;
+    resize: none;
 
     /* reset */
     border-width: 0;
     border-style: solid;
     padding: 0;
     background-color: #1d262c;
-    border-radius: 5px;
+}
+
+input[type=text]::-webkit-input-placeholder, 
+input[type=email]::-webkit-input-placeholder, 
+.message::-webkit-input-placeholder {
+    padding: 2em;
+}
+
+input[type=text]:hover, input[type=email]:hover, textarea:hover{
+    border: 3px dashed white;
+    border-radius: 4px;
+    
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 }
 
 form{
@@ -60,4 +79,38 @@ form{
 .columna-2 button{
     width: 100%;
     height: 100%;
+}
+
+.contForm{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #040505;
+    padding: .5em;
+}
+
+.open{
+    display: grid;
+    opacity: 1;
+
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.hide{
+    display: none;
+    opacity: 0;
+}
+
+.closeButton{
+    padding: 1em;
+    margin-left: auto;
+}
+
+
+.title--button{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
 }
