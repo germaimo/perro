@@ -11,6 +11,7 @@ const Footer = () => {
   const handleOpen = () => { setOpen(!open);  };
 
   return ( <div className={styles['footer']}>
+      <Form isOpen={open} handleOpen={handleOpen} />
       <img src={contact} className={styles['img_reachOut']} alt='person resting using phone' />
         
         <div className={styles['more']}>  
@@ -22,8 +23,6 @@ const Footer = () => {
       <img src={dancing} className={styles['img_dancing']} alt='people dancing' />
       <div className={styles['text_footer']}> a product by perro industries © 2022 All rigths reserved</div>
 
-
-      <Form isOpen={open} handleOpen={handleOpen} />
   </div> 
   )
 }

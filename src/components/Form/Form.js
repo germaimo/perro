@@ -37,7 +37,7 @@ const Formu = ({ isOpen, handleOpen }) => (
                             <Field type="text" name="name" placeholder='Nombre' />
                             <ErrorMessage name="name" component="div" />
 
-                            <div>
+                            <div className={styles['contDivEmail']}>
                                 <Field type="email" name="email" placeholder='E-mail' />
                                 <ErrorMessage name="email" component="div" className={styles['requiered-warning']} />
                             </div>
@@ -55,7 +55,8 @@ const Formu = ({ isOpen, handleOpen }) => (
 
                     <div className={styles['columna-2']}>
                         <button type="submit" disabled={isSubmitting}>
-                            ↪️ Submit
+                            ↪️ <br/>
+                            Submit
                         </button>
                     </div>
                 </Form>

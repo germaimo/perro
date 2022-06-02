@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     line-height: 3rem;
-    margin: 1em 4em 1em;
+    margin: 2em 4em 1em;
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ img{
 }
 
 .img_reachOut{
-    width: 20%;
+    width: 15%;
 }
 
 .img_dancing{

@@ -5,10 +5,7 @@ const Features = ({ textTitle, clasx, items }) => {
 
   const [highlight, setHighlight] = useState('');
 
-  const handleHighlight = (id) => {
-  
-    setHighlight(id);
-  };
+  const handleHighlight = (id) => { setHighlight(id); };
 
   return (<>
     <h2 className={styles['features_h2']} >{textTitle}</h2>
@@ -16,10 +13,10 @@ const Features = ({ textTitle, clasx, items }) => {
 
       {items.map((item, index) => {
         return (
-          <div key={index} onClick={ ()=>{handleHighlight(item.id)} } className={ highlight === item.id ? styles['css-selector'] : ''} >
-            <p> {item.emoji} </p>
-          </div>
-
+          <article key={index} onClick={ ()=>{handleHighlight(item.id)} } className={ highlight === item.id ? styles['css-selector'] : ''} >
+            <p className={ highlight === item.id ? styles['emoji-hide'] : ''}> {item.emoji} </p>
+            <div className={ ` ${styles['data-text'] } ${ highlight === item.id ? styles['data-text-show'] : ''  } ` }> {item.text} </div> 
+          </article>
         )
       })}
 

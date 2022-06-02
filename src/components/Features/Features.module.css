@@ -4,9 +4,14 @@
     margin-top: 1em;
 }
 
+.items-4{
+    grid-template-columns: repeat(4, 1fr);
+    height: 35vh;  
+}
+
 .items-3{
     grid-template-columns: repeat(3, 1fr);
-    height: 25vh;
+    height: 35vh;
 }
 
 .items-2{
@@ -14,7 +19,7 @@
     height: 40vh;
 }
 
-.content_features div{
+.content_features article{
     border: 3px dashed transparent;
     background-color: #89b5dc30;
     border-radius: 3px;
@@ -28,7 +33,7 @@
     transition-timing-function: linear;
 }
 
-.content_features div:hover{
+.content_features article:hover{
     border: 4px dashed white;
     border-radius: 5.5px;
     
@@ -38,7 +43,7 @@
     cursor: pointer;
 }
 
-.content_features div p{
+.content_features article p{
     font-size: 2em;
 }
 
@@ -51,13 +56,49 @@
     border: 3px solid white !important;
 }
 
-.css-selector {
-    background: linear-gradient(270deg, #1c6fef, #4d4d4d);
-    background-size: 400% 400%;
+.data-text{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    position: absolute;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    width: 20em;
+    font-weight: 100;
+}
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+.emoji-hide{
+    opacity: 0.2;
+}
+
+.data-text-show{
+    display: flex;
+}
+
+.css-selector {
+    background: linear-gradient(280deg, #efc831, #f83c33, #537c29);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
 }
 
 @-webkit-keyframes AnimationName {
